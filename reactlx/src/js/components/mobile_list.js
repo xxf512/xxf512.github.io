@@ -12,7 +12,7 @@ export default class MobileList extends React.Component {
 		var myFetchOptions = {
 			method: 'GET'
 		};
-		fetch("http://newsapi.gugujiankong.com/Handler.ashx?action=getnews&type=" + this.props.type + "&count=" + this.props.count, myFetchOptions).then(response => response.json()).then(json => this.setState({news: json}));
+		fetch("https://newsapi.gugujiankong.com/Handler.ashx?action=getnews&type=" + this.props.type + "&count=" + this.props.count, myFetchOptions).then(response => response.json()).then(json => this.setState({news: json}));
 	};
 	render() {
 		const {news} = this.state;

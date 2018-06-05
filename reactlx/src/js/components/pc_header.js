@@ -52,7 +52,7 @@ handleSubmit(e)
 		};
 		var formData= this.props.form.getFieldsValue();
     console.log(formData);
-    fetch("http://newsapi.gugujiankong.com/Handler.ashx?action=" + this.state.action
+    fetch("https://newsapi.gugujiankong.com/Handler.ashx?action=" + this.state.action
 		+ "&username="+formData.userName+"&password="+formData.password
 		+"&r_userName=" + formData.r_userName + "&r_password="
 		+ formData.r_password + "&r_confirmPassword="
@@ -107,8 +107,8 @@ callback(key) {
         <Row>
           <Col span={1}></Col>
           <Col span={3}>
-            <a href="/" class = "log">
-              <img src="/src/images/logo1.png" alt="logo"/>
+            <a href="././index.html" class = "log">
+              <img src="./src/images/logo1.png" alt="logo"/>
               <span>ReactNews</span>
             </a>
           </Col>

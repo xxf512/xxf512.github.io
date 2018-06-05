@@ -21455,7 +21455,7 @@
 	      };
 	      var formData = this.props.form.getFieldsValue();
 	      console.log(formData);
-	      fetch("http://newsapi.gugujiankong.com/Handler.ashx?action=" + this.state.action + "&username=" + formData.userName + "&password=" + formData.password + "&r_userName=" + formData.r_userName + "&r_password=" + formData.r_password + "&r_confirmPassword=" + formData.r_confirmPassword, myFetchOptions).then(function (response) {
+	      fetch("https://newsapi.gugujiankong.com/Handler.ashx?action=" + this.state.action + "&username=" + formData.userName + "&password=" + formData.password + "&r_userName=" + formData.r_userName + "&r_password=" + formData.r_password + "&r_confirmPassword=" + formData.r_confirmPassword, myFetchOptions).then(function (response) {
 	        return response.json();
 	      }).then(function (json) {
 	        _this2.setState({ userNickName: json.NickUserName, userid: json.UserId });
@@ -21538,8 +21538,8 @@
 	            { span: 3 },
 	            _react2.default.createElement(
 	              'a',
-	              { href: '/', className: 'log' },
-	              _react2.default.createElement('img', { src: '/src/images/logo1.png', alt: 'logo' }),
+	              { href: '././index.html', className: 'log' },
+	              _react2.default.createElement('img', { src: './src/images/logo1.png', alt: 'logo' }),
 	              _react2.default.createElement(
 	                'span',
 	                null,
@@ -53849,7 +53849,7 @@
 	      var myFetchOptions = {
 	        method: 'GET'
 	      };
-	      fetch("http://newsapi.gugujiankong.com/Handler.ashx?action=getnews&type=" + this.props.type + "&count=" + this.props.count, myFetchOptions).then(function (response) {
+	      fetch("https://newsapi.gugujiankong.com/Handler.ashx?action=getnews&type=" + this.props.type + "&count=" + this.props.count, myFetchOptions).then(function (response) {
 	        return response.json();
 	      }).then(function (json) {
 	        return _this2.setState({ news: json });
@@ -54590,7 +54590,7 @@
 				var myFetchOptions = {
 					method: 'GET'
 				};
-				fetch("http://newsapi.gugujiankong.com/Handler.ashx?action=getnews&type=" + this.props.type + "&count=" + this.props.count, myFetchOptions).then(function (response) {
+				fetch("https://newsapi.gugujiankong.com/Handler.ashx?action=getnews&type=" + this.props.type + "&count=" + this.props.count, myFetchOptions).then(function (response) {
 					return response.json();
 				}).then(function (json) {
 					return _this2.setState({ news: json });
@@ -55664,7 +55664,7 @@
 				};
 				var formData = this.props.form.getFieldsValue();
 				console.log(formData);
-				fetch("http://newsapi.gugujiankong.com/Handler.ashx?action=" + this.state.action + "&username=" + formData.userName + "&password=" + formData.password + "&r_userName=" + formData.r_userName + "&r_password=" + formData.r_password + "&r_confirmPassword=" + formData.r_confirmPassword, myFetchOptions).then(function (response) {
+				fetch("https://newsapi.gugujiankong.com/Handler.ashx?action=" + this.state.action + "&username=" + formData.userName + "&password=" + formData.password + "&r_userName=" + formData.r_userName + "&r_password=" + formData.r_password + "&r_confirmPassword=" + formData.r_confirmPassword, myFetchOptions).then(function (response) {
 					return response.json();
 				}).then(function (json) {
 					_this2.setState({ userNickName: json.NickUserName, userid: json.UserId });
@@ -55927,7 +55927,7 @@
 	      var myFetchOptions = {
 	        method: 'GET'
 	      };
-	      fetch("http://newsapi.gugujiankong.com/Handler.ashx?action=getnews&type=" + this.props.type + "&count=" + this.props.count, myFetchOptions).then(function (response) {
+	      fetch("https://newsapi.gugujiankong.com/Handler.ashx?action=getnews&type=" + this.props.type + "&count=" + this.props.count, myFetchOptions).then(function (response) {
 	        return response.json();
 	      }).then(function (json) {
 	        return _this2.setState({ news: json });
@@ -56089,7 +56089,7 @@
 	      var myFetchOptions = {
 	        method: 'GET'
 	      };
-	      fetch("http://newsapi.gugujiankong.com/Handler.ashx?action=getnewsitem&uniquekey=" + this.props.match.params.uniquekey, myFetchOptions).then(function (response) {
+	      fetch("https://newsapi.gugujiankong.com/Handler.ashx?action=getnewsitem&uniquekey=" + this.props.match.params.uniquekey, myFetchOptions).then(function (response) {
 	        return response.json();
 	      }).then(function (json) {
 	        _this2.setState({ newsItem: json });
@@ -56509,7 +56509,7 @@
 				var myFetchOptions = {
 					method: 'GET'
 				};
-				fetch("http://newsapi.gugujiankong.com/Handler.ashx?action=getcomments&uniquekey=" + this.props.uniquekey, myFetchOptions).then(function (response) {
+				fetch("https://newsapi.gugujiankong.com/Handler.ashx?action=getcomments&uniquekey=" + this.props.uniquekey, myFetchOptions).then(function (response) {
 					return response.json();
 				}).then(function (json) {
 					_this2.setState({ comments: json });
@@ -56525,7 +56525,7 @@
 					method: 'GET'
 				};
 				var formdata = this.props.form.getFieldsValue();
-				fetch("http://newsapi.gugujiankong.com/Handler.ashx?action=comment&userid=" + localStorage.userid + "&uniquekey=" + this.props.uniquekey + "&commnet=" + formdata.remark, myFetchOptions).then(function (response) {
+				fetch("https://newsapi.gugujiankong.com/Handler.ashx?action=comment&userid=" + localStorage.userid + "&uniquekey=" + this.props.uniquekey + "&commnet=" + formdata.remark, myFetchOptions).then(function (response) {
 					return response.json();
 				}).then(function (json) {
 					_this3.componentDidMount();
@@ -56537,7 +56537,7 @@
 				var myFetchOptions = {
 					method: 'GET'
 				};
-				fetch("http://newsapi.gugujiankong.com/Handler.ashx?action=uc&userid=" + localStorage.userid + "&uniquekey=" + this.props.uniquekey, myFetchOptions).then(function (response) {
+				fetch("https://newsapi.gugujiankong.com/Handler.ashx?action=uc&userid=" + localStorage.userid + "&uniquekey=" + this.props.uniquekey, myFetchOptions).then(function (response) {
 					return response.json();
 				}).then(function (json) {
 					//收藏成功以后进行一下全局的提醒
@@ -56923,7 +56923,7 @@
 							var myFetchOptions = {
 									method: 'GET'
 							};
-							fetch("http://newsapi.gugujiankong.com/Handler.ashx?action=getnewsitem&uniquekey=" + this.props.match.params.uniquekey, myFetchOptions).then(function (response) {
+							fetch("https://newsapi.gugujiankong.com/Handler.ashx?action=getnewsitem&uniquekey=" + this.props.match.params.uniquekey, myFetchOptions).then(function (response) {
 									return response.json();
 							}).then(function (json) {
 									_this2.setState({ newsItem: json });
@@ -57091,13 +57091,13 @@
 				var myFetchOptions = {
 					method: 'GET'
 				};
-				fetch("http://newsapi.gugujiankong.com/Handler.ashx?action=getuc&userid=" + localStorage.userid, myFetchOptions).then(function (response) {
+				fetch("https://newsapi.gugujiankong.com/Handler.ashx?action=getuc&userid=" + localStorage.userid, myFetchOptions).then(function (response) {
 					return response.json();
 				}).then(function (json) {
 					_this2.setState({ usercollection: json });
 					document.title = _this2.state.newsItem.title + " - React News | React 驱动的新闻平台";
 				});
-				fetch("http://newsapi.gugujiankong.com/Handler.ashx?action=getusercomments&userid=" + localStorage.userid, myFetchOptions).then(function (response) {
+				fetch("https://newsapi.gugujiankong.com/Handler.ashx?action=getusercomments&userid=" + localStorage.userid, myFetchOptions).then(function (response) {
 					return response.json();
 				}).then(function (json) {
 					_this2.setState({ usercomments: json });
@@ -62229,13 +62229,13 @@
 				var myFetchOptions = {
 					method: 'GET'
 				};
-				fetch("http://newsapi.gugujiankong.com/Handler.ashx?action=getuc&userid=" + localStorage.userid, myFetchOptions).then(function (response) {
+				fetch("https://newsapi.gugujiankong.com/Handler.ashx?action=getuc&userid=" + localStorage.userid, myFetchOptions).then(function (response) {
 					return response.json();
 				}).then(function (json) {
 					_this2.setState({ usercollection: json });
 					document.title = _this2.state.newsItem.title + " - React News | React 驱动的新闻平台";
 				});
-				fetch("http://newsapi.gugujiankong.com/Handler.ashx?action=getusercomments&userid=" + localStorage.userid, myFetchOptions).then(function (response) {
+				fetch("https://newsapi.gugujiankong.com/Handler.ashx?action=getusercomments&userid=" + localStorage.userid, myFetchOptions).then(function (response) {
 					return response.json();
 				}).then(function (json) {
 					_this2.setState({ usercomments: json });

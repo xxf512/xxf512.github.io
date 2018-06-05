@@ -36,13 +36,13 @@ export default class MobileUserCenter extends React.Component {
 		var myFetchOptions = {
 			method: 'GET'
 		};
-		fetch("http://newsapi.gugujiankong.com/Handler.ashx?action=getuc&userid=" + localStorage.userid, myFetchOptions)
+		fetch("https://newsapi.gugujiankong.com/Handler.ashx?action=getuc&userid=" + localStorage.userid, myFetchOptions)
 		.then(response=>response.json())
 		.then(json=>{
 			this.setState({usercollection:json});
 			document.title = this.state.newsItem.title + " - React News | React 驱动的新闻平台";
 		});
-		fetch("http://newsapi.gugujiankong.com/Handler.ashx?action=getusercomments&userid=" + localStorage.userid, myFetchOptions)
+		fetch("https://newsapi.gugujiankong.com/Handler.ashx?action=getusercomments&userid=" + localStorage.userid, myFetchOptions)
 		.then(response=>response.json())
 		.then(json=>{
 			this.setState({usercomments:json});
